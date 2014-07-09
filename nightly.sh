@@ -17,6 +17,7 @@ opts='-z --timeout 1800'
 scripts=/home/mininet/build-scripts
 post=$scripts/post-build-result.sh
 check=$scripts/check-build-dir.sh
+examples=$scripts/test-built-vm.sh
 maxbuilds=3
 
 echo '* Pulling latest build.py'
