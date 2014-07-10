@@ -27,8 +27,8 @@ if [ "$images" != "" ]; then
 fi
 
 build=~/mininet/util/vm/build.py
-# was: --verbose
-opts=""
+# BL: was: "" - using verbose for now as we add this to nightly
+opts="--verbose"
 branch=""
 #--branch master"
 
