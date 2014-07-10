@@ -3,7 +3,7 @@
 if [ $# -lt 2 ]; then
   echo "Mininet nightly build tester"
   echo "Usage: $0 <day> <flavor> [<test>...]"
-  echo "Valid tests include: sanity core examplesquick examples ..."
+  echo "Valid tests include: sanity core examplesquick examplesfull ..."
   exit 1
 fi
 
