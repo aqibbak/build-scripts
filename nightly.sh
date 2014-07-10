@@ -50,8 +50,8 @@ for dist in $dists; do
     builddir=mn-$target*
     echo "* Checking build log for $builddir"
     $post "check-$target" $check $builddir
-    echo "* Testing examples"
-    $post "test-examples-$target" $examples $date $target examples
+    echo "* Testing examples (quick)"
+    $post "test-examples-$target" $examples $date $target examplesquick
   done
 done
 
@@ -69,8 +69,8 @@ for dist in $dists; do
     builddir=mn-$release-$target*
     echo "* Checking build log for $builddir"
     $post "check-$release-$target" $check $builddir
-    echo "* Testing examples"
-    $post "test-examples-$target" $examples $date $target examples
+    echo "* Testing examples (quick)"
+    $post "test-examples-$target" $examples $date $target examplesquick
   done
 done
 
