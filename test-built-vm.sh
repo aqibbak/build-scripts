@@ -37,7 +37,7 @@ for image in $images; do
     cmd="$build $opts $branch $tests --image $image"
     echo "- $cmd"
     $cmd
-  echo "* Done testing $image"
+  echo "* Done testing $image (exit code $?)"
 done
 
 exit 0
