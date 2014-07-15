@@ -39,7 +39,7 @@ cd $dir
 
 # Build current master branch
 
-dists="precise quantal raring saucy trusty"
+dists="precise saucy trusty utopic"
 archs="32 64"
 
 for dist in $dists; do
@@ -58,7 +58,7 @@ done
 # Build stable release
 
 release=2.1.0p2
-dists="raring"
+dists="trusty"
 opts="$opts -b $release"
 
 for dist in $dists; do
