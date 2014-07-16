@@ -70,7 +70,7 @@ for dist in $dists; do
     echo "* Checking build log for $builddir"
     $post "check-$release-$target" $check $builddir
     echo "* Testing examples (quick)"
-    $post "test-examples-$target" $examples $date $target examplesquick
+    $post "test-examples-$release-$target" $examples $date $target examplesquick
   done
 done
 
