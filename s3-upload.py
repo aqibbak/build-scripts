@@ -7,11 +7,8 @@ Upload a file to S3
 from sys import argv, stdout
 from time import time
 from os.path import basename
-
 from boto.s3.key import Key
 from boto.s3.connection import S3Connection
-
-
 def uploadFile( bucket, filename ):
     "Upload a file to a bucket"
     key = basename( filename )
